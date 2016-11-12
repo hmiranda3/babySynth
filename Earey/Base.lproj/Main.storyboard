@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iFX-y6-XNx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Kid Synth View Controller-->
+        <scene sceneID="Yd5-4m-K2D">
+            <objects>
+                <viewController id="6Mx-do-17t" customClass="KidSynthViewController" customModule="Earey" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7fh-cP-aIE"/>
+                        <viewControllerLayoutGuide type="bottom" id="qSq-I4-Cp7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JR2-qa-4yv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xH-gJ-ATq">
+                                <rect key="frame" x="85" y="64" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="108"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="R7Y-s8-1Cj">
+                                <rect key="frame" x="14" y="140" width="347" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="VEc-4h-efs">
+                                <rect key="frame" x="14" y="209" width="347" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="k3y-xt-N4Q">
+                                <rect key="frame" x="0.0" y="272" width="375" height="395"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="V8b-k9-ntx">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OqF-gk-kUw">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpt-zh-kaN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="66"/>
+                                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                                        <state key="normal" title="C"/>
+                                                        <connections>
+                                                            <action selector="buttonOneDrag:" destination="6Mx-do-17t" eventType="touchDragExit" id="MUd-AX-pga"/>
+                                                            <action selector="buttonOnePressed:" destination="6Mx-do-17t" eventType="touchDown" id="34z-oT-Kos"/>
+                                                            <action selector="buttonOneReleased:" destination="6Mx-do-17t" eventType="touchUpInside" id="bsc-gU-NXD"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cjd-hg-dEG">
+                                                        <rect key="frame" x="125" y="0.0" width="125" height="66"/>
+                                                        <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                                        <state key="normal" title="C#/Db"/>
+                                                        <connections>
+                                                            <action selector="buttonTwoDrag:" destination="6Mx-do-17t" eventType="touchDragExit" id="UAu-87-VIO"/>
+                                                            <action selector="buttonTwoPressed:" destination="6Mx-do-17t" eventType="touchDown" id="NbY-gD-ahs"/>
+                                                            <action selector="buttonTwoReleased:" destination="6Mx-do-17t" eventType="touchUpInside" id="Cwf-MV-DGr"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WE-4R-ham">
+                                                        <rect key="frame" x="250" y="0.0" width="125" height="66"/>
+                                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                                        <state key="normal" title="D"/>
+                                                        <connections>
+                                                            <action selector="buttonThreeDragged:" destination="6Mx-do-17t" eventType="touchDragExit" id="RVS-6U-uyg"/>
+                                                            <action selector="buttonThreePressed:" destination="6Mx-do-17t" eventType="touchDown" id="ezd-aO-IKt"/>
+                                                            <action selector="buttonThreeReleased:" destination="6Mx-do-17t" eventType="touchUpInside" id="2ax-8k-vlR"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4P5-gh-sA9">
+                                        <rect key="frame" x="0.0" y="66" width="375" height="65.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="012-uq-tZU">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9y-OL-Icl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="65.5"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                                        <state key="normal" title="D#/Eb"/>
+                                                        <connections>
+                                                            <action selector="buttonFourDrag:" destination="6Mx-do-17t" eventType="touchDragExit" id="eXO-YO-ZSd"/>
+                                                            <action selector="buttonFourPressed:" destination="6Mx-do-17t" eventType="touchDown" id="bjk-kk-dXV"/>
+                                                            <action selector="buttonFourReleased:" destination="6Mx-do-17t" eventType="touchUpInside" id="KKe-45-ADl"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FB4-u8-dBw">
+                                                        <rect key="frame" x="125" y="0.0" width="125" height="65.5"/>
+                                                        <color key="backgroundColor" red="1" green="0.4802950922" blue="0.1019211971" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                                        <state key="normal" title="E"/>
+                                                        <connections>
+                                                            <action selector="buttonFiveDrag:" destination="6Mx-do-17t" eventType="touchDragExit" id="yCB-gE-2sx"/>
+                                                            <action selector="buttonFivePressed:" destination="6Mx-do-17t" eventType="touchDown" id="IrV-TW-d7i"/>
+                                                            <action selector="buttonFiveReleased:" destination="6Mx-do-17t" eventType="touchUpInside" id="bUH-yc-Bbr"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fz-8Y-ubE">
+                                                        <rect key="frame" x="250" y="0.0" width="125" height="65.5"/>
+                                                        <color key="backgroundColor" red="0.91913060899999999" green="0.58970917389999999" blue="0.14995980419999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                                        <state key="normal" title="F"/>
+                                                        <connections>
+                                                            <action selector="buttonSixDrag:" destination="6Mx-do-17t" eventType="touchDragExit" id="Iel-AL-TPZ"/>
+                                                            <action selector="buttonSixPressed:" destination="6Mx-do-17t" eventType="touchDown" id="dWe-IC-zhR"/>
+                                                            <action selector="buttonSixReleased:" destination="6Mx-do-17t" eventType="touchUpInside" id="9II-EC-0eR"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wgW-Qi-lIx">
+                                        <rect key="frame" x="0.0" y="131.5" width="375" height="66"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vIY-Aq-r8j">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlF-kQ-73y">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="66"/>
+                                                        <color key="backgroundColor" red="0.63759319039999995" green="0.85656916270000005" blue="0.863836453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                                        <state key="normal" title="F#/Gb"/>
+                                                        <connections>
+                                                            <action selector="buttonSevenDrag:" destination="6Mx-do-17t" eventType="touchDragExit" id="AOY-IX-2FF"/>
+                                                            <action selector="buttonSevenPressed:" destination="6Mx-do-17t" eventType="touchDown" id="Gfq-H0-Ggo"/>
+                                                            <action selector="buttonSevenReleased:" destination="6Mx-do-17t" eventType="touchUpInside" id="pGZ-E2-0sf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhE-Cs-WEd">
+                                                        <rect key="frame" x="125" y="0.0" width="125" height="66"/>
+                                                        <color key="backgroundColor" red="0.39755427837371826" green="0.85524851083755493" blue="0.97518247365951538" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                                        <state key="normal" title="G"/>
+                                                        <connections>
+                                                            <action selector="buttonEightDrag:" destination="6Mx-do-17t" eventType="touchDragExit" id="jcp-VS-dnv"/>
+                                                            <action selector="buttonEightPressed:" destination="6Mx-do-17t" eventType="touchDown" id="wec-uy-SRh"/>
+                                                            <action selector="buttonEightReleased:" destination="6Mx-do-17t" eventType="touchUpInside" id="HkQ-aN-B7C"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QcA-U4-Ojc">
+                                                        <rect key="frame" x="250" y="0.0" width="125" height="66"/>
+                                                        <color key="backgroundColor" red="0.85258854279999996" green="0.98014962059999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                                        <state key="normal" title="G#/Ab"/>
+                                                        <connections>
+                                                            <action selector="buttonNineDrag:" destination="6Mx-do-17t" eventType="touchDragExit" id="Adf-Bw-tTp"/>
+                                                            <action selector="buttonNinePressed:" destination="6Mx-do-17t" eventType="touchDown" id="tQQ-JW-KoL"/>
+                                                            <action selector="buttonNineReleased:" destination="6Mx-do-17t" eventType="touchUpInside" id="xXg-kz-saR"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DrS-BD-o3b">
+                                        <rect key="frame" x="0.0" y="197.5" width="375" height="66"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Irj-pm-NEH">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSG-z0-Twt">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="66"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                                        <state key="normal" title="A"/>
+                                                        <connections>
+                                                            <action selector="buttonTenDrag:" destination="6Mx-do-17t" eventType="touchDragExit" id="jR4-ih-z2p"/>
+                                                            <action selector="buttonTenPressed:" destination="6Mx-do-17t" eventType="touchDown" id="6Jt-Jb-kkr"/>
+                                                            <action selector="buttonTenReleased:" destination="6Mx-do-17t" eventType="touchUpInside" id="aLh-HC-gh3"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45d-M2-JRr">
+                                                        <rect key="frame" x="125" y="0.0" width="125" height="66"/>
+                                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                                        <state key="normal" title="A#/Bb"/>
+                                                        <connections>
+                                                            <action selector="buttonElevenDrag:" destination="6Mx-do-17t" eventType="touchDragExit" id="tqN-da-wod"/>
+                                                            <action selector="buttonElevenPressed:" destination="6Mx-do-17t" eventType="touchDown" id="RiD-pv-fb9"/>
+                                                            <action selector="buttonElevenReleased:" destination="6Mx-do-17t" eventType="touchUpInside" id="lfc-Bq-kW7"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOc-3I-OH4">
+                                                        <rect key="frame" x="250" y="0.0" width="125" height="66"/>
+                                                        <color key="backgroundColor" red="1" green="0.4802950922" blue="0.1019211971" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                                        <state key="normal" title="B"/>
+                                                        <connections>
+                                                            <action selector="buttonTwelveDrag:" destination="6Mx-do-17t" eventType="touchDragExit" id="Vf7-Cd-nlH"/>
+                                                            <action selector="buttonTwelvePressed:" destination="6Mx-do-17t" eventType="touchDown" id="4LO-hs-t9E"/>
+                                                            <action selector="buttonTwelveReleased:" destination="6Mx-do-17t" eventType="touchUpInside" id="9Ot-QK-jE0"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="h3C-2w-ykv">
+                                        <rect key="frame" x="0.0" y="263.5" width="375" height="65.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4dJ-Df-ayq">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQS-BM-b36">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="65.5"/>
+                                                        <color key="backgroundColor" red="0.7859140992904059" green="0.55141991321465622" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                                        <state key="normal" title="Something"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLJ-Ik-cIi">
+                                                        <rect key="frame" x="125" y="0.0" width="125" height="65.5"/>
+                                                        <color key="backgroundColor" red="0.863836453" green="0.863836453" blue="0.863836453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                                        <state key="normal" title="C-high"/>
+                                                        <connections>
+                                                            <action selector="buttonThirteenDrag:" destination="6Mx-do-17t" eventType="touchDragExit" id="3nl-Pn-sv1"/>
+                                                            <action selector="buttonThirteenPressed:" destination="6Mx-do-17t" eventType="touchDown" id="Ngu-Yg-Fyi"/>
+                                                            <action selector="buttonThirteenReleased:" destination="6Mx-do-17t" eventType="touchUpInside" id="lxq-ra-q06"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ZTg-nC-d7j">
+                                                        <rect key="frame" x="250" y="0.0" width="125" height="65.5"/>
+                                                        <color key="backgroundColor" red="0.59332185675491389" green="1" blue="0.93796893847926988" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                                        <state key="normal" title="Something"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ECx-NG-ex3">
+                                        <rect key="frame" x="0.0" y="329" width="375" height="66"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJz-nn-nxW">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4l6-f9-3cS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+                                                        <color key="backgroundColor" red="1" green="0.58806897433169447" blue="0.58163228272598289" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="31"/>
+                                                        <state key="normal" title="Sustain"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5xH-gJ-ATq" firstAttribute="leading" secondItem="JR2-qa-4yv" secondAttribute="leadingMargin" constant="69" id="ORM-FQ-piD"/>
+                            <constraint firstItem="k3y-xt-N4Q" firstAttribute="top" secondItem="5xH-gJ-ATq" secondAttribute="bottom" constant="208" id="S3U-2d-ezm"/>
+                            <constraint firstItem="k3y-xt-N4Q" firstAttribute="leading" secondItem="JR2-qa-4yv" secondAttribute="leading" id="TqC-BG-mb9"/>
+                            <constraint firstAttribute="trailing" secondItem="k3y-xt-N4Q" secondAttribute="trailing" id="VEI-ha-vKb"/>
+                            <constraint firstItem="qSq-I4-Cp7" firstAttribute="top" secondItem="k3y-xt-N4Q" secondAttribute="bottom" id="ViJ-gX-7ZQ"/>
+                            <constraint firstItem="k3y-xt-N4Q" firstAttribute="top" secondItem="7fh-cP-aIE" secondAttribute="bottom" constant="208" id="j1u-Wl-Ofq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k3y-xt-N4Q" secondAttribute="trailing" constant="-16" id="l2a-J4-1aR"/>
+                            <constraint firstItem="k3y-xt-N4Q" firstAttribute="leading" secondItem="JR2-qa-4yv" secondAttribute="leadingMargin" constant="-16" id="rpi-Xt-9d4"/>
+                            <constraint firstItem="qSq-I4-Cp7" firstAttribute="top" secondItem="k3y-xt-N4Q" secondAttribute="bottom" id="uXf-YP-hvK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9cX-AF-vwl"/>
+                    <connections>
+                        <outlet property="buttonEightView" destination="vhE-Cs-WEd" id="8Lh-ag-au0"/>
+                        <outlet property="buttonElevenView" destination="45d-M2-JRr" id="9CO-um-NyD"/>
+                        <outlet property="buttonFiveView" destination="FB4-u8-dBw" id="0Pj-bG-zdc"/>
+                        <outlet property="buttonFourView" destination="q9y-OL-Icl" id="Gwm-7M-F5k"/>
+                        <outlet property="buttonNineView" destination="QcA-U4-Ojc" id="UE8-Fn-E21"/>
+                        <outlet property="buttonOneView" destination="bpt-zh-kaN" id="U08-zo-fvF"/>
+                        <outlet property="buttonSevenView" destination="hlF-kQ-73y" id="lk1-iy-YGG"/>
+                        <outlet property="buttonSixView" destination="6fz-8Y-ubE" id="rrX-v2-tnS"/>
+                        <outlet property="buttonTenView" destination="jSG-z0-Twt" id="6V2-2W-OtO"/>
+                        <outlet property="buttonThirteenView" destination="ZLJ-Ik-cIi" id="4lr-xx-hY3"/>
+                        <outlet property="buttonThreeView" destination="4WE-4R-ham" id="mJ5-KP-3i4"/>
+                        <outlet property="buttonTwelveView" destination="bOc-3I-OH4" id="IbS-iP-lfg"/>
+                        <outlet property="buttonTwoView" destination="Cjd-hg-dEG" id="JvE-ha-wKU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RKZ-Ag-onL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1732" y="147.97601199400302"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IJk-4B-Y4u">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iFX-y6-XNx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NH6-VN-zaS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6Mx-do-17t" kind="relationship" relationship="rootViewController" id="wKN-kC-N4K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NBi-UZ-WcT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="792.79999999999995" y="147.97601199400302"/>
+        </scene>
+    </scenes>
+</document>

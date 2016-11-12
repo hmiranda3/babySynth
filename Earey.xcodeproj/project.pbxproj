@@ -1,0 +1,350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2814834B1DD12C5400E625C7 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CF55791DD0522F00B64D4F /* AudioKit.framework */; };
+		2814834C1DD12C5400E625C7 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28CF55791DD0522F00B64D4F /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		281F4C9D1DD136D800B324CD /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281F4C9C1DD136D800B324CD /* Notes.swift */; };
+		2851E03C1DD6201C000D055C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2851E03B1DD6201C000D055C /* Extensions.swift */; };
+		28A0F86B1DD2B86D0020AB0A /* KidSynthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A0F86A1DD2B86D0020AB0A /* KidSynthController.swift */; };
+		28CF55681DCF0DB700B64D4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CF55671DCF0DB700B64D4F /* AppDelegate.swift */; };
+		28CF556A1DCF0DB700B64D4F /* KidSynthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CF55691DCF0DB700B64D4F /* KidSynthViewController.swift */; };
+		28CF556D1DCF0DB700B64D4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CF556B1DCF0DB700B64D4F /* Main.storyboard */; };
+		28CF556F1DCF0DB700B64D4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28CF556E1DCF0DB700B64D4F /* Assets.xcassets */; };
+		28CF55721DCF0DB700B64D4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CF55701DCF0DB700B64D4F /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2814834D1DD12C5400E625C7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2814834C1DD12C5400E625C7 /* AudioKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		281F4C9C1DD136D800B324CD /* Notes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		2851E03B1DD6201C000D055C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		28A0F86A1DD2B86D0020AB0A /* KidSynthController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KidSynthController.swift; sourceTree = "<group>"; };
+		28CF55641DCF0DB700B64D4F /* Earey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Earey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28CF55671DCF0DB700B64D4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28CF55691DCF0DB700B64D4F /* KidSynthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidSynthViewController.swift; sourceTree = "<group>"; };
+		28CF556C1DCF0DB700B64D4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28CF556E1DCF0DB700B64D4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28CF55711DCF0DB700B64D4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28CF55731DCF0DB700B64D4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28CF55791DD0522F00B64D4F /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28CF55611DCF0DB700B64D4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2814834B1DD12C5400E625C7 /* AudioKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28CF555B1DCF0DB700B64D4F = {
+			isa = PBXGroup;
+			children = (
+				28CF55791DD0522F00B64D4F /* AudioKit.framework */,
+				28CF55661DCF0DB700B64D4F /* Earey */,
+				28CF55651DCF0DB700B64D4F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28CF55651DCF0DB700B64D4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28CF55641DCF0DB700B64D4F /* Earey.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28CF55661DCF0DB700B64D4F /* Earey */ = {
+			isa = PBXGroup;
+			children = (
+				28CF55671DCF0DB700B64D4F /* AppDelegate.swift */,
+				28CF55691DCF0DB700B64D4F /* KidSynthViewController.swift */,
+				28A0F86A1DD2B86D0020AB0A /* KidSynthController.swift */,
+				2851E03B1DD6201C000D055C /* Extensions.swift */,
+				28CF556B1DCF0DB700B64D4F /* Main.storyboard */,
+				281F4C9C1DD136D800B324CD /* Notes.swift */,
+				28CF556E1DCF0DB700B64D4F /* Assets.xcassets */,
+				28CF55701DCF0DB700B64D4F /* LaunchScreen.storyboard */,
+				28CF55731DCF0DB700B64D4F /* Info.plist */,
+			);
+			path = Earey;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28CF55631DCF0DB700B64D4F /* Earey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28CF55761DCF0DB700B64D4F /* Build configuration list for PBXNativeTarget "Earey" */;
+			buildPhases = (
+				28CF55601DCF0DB700B64D4F /* Sources */,
+				28CF55611DCF0DB700B64D4F /* Frameworks */,
+				28CF55621DCF0DB700B64D4F /* Resources */,
+				2814834D1DD12C5400E625C7 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Earey;
+			productName = Earey;
+			productReference = 28CF55641DCF0DB700B64D4F /* Earey.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28CF555C1DCF0DB700B64D4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "littleJohn's";
+				TargetAttributes = {
+					28CF55631DCF0DB700B64D4F = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 578KYYBXGE;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 28CF555F1DCF0DB700B64D4F /* Build configuration list for PBXProject "Earey" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28CF555B1DCF0DB700B64D4F;
+			productRefGroup = 28CF55651DCF0DB700B64D4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28CF55631DCF0DB700B64D4F /* Earey */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28CF55621DCF0DB700B64D4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28CF55721DCF0DB700B64D4F /* LaunchScreen.storyboard in Resources */,
+				28CF556F1DCF0DB700B64D4F /* Assets.xcassets in Resources */,
+				28CF556D1DCF0DB700B64D4F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28CF55601DCF0DB700B64D4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2851E03C1DD6201C000D055C /* Extensions.swift in Sources */,
+				28CF556A1DCF0DB700B64D4F /* KidSynthViewController.swift in Sources */,
+				28A0F86B1DD2B86D0020AB0A /* KidSynthController.swift in Sources */,
+				28CF55681DCF0DB700B64D4F /* AppDelegate.swift in Sources */,
+				281F4C9D1DD136D800B324CD /* Notes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		28CF556B1DCF0DB700B64D4F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28CF556C1DCF0DB700B64D4F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		28CF55701DCF0DB700B64D4F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28CF55711DCF0DB700B64D4F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28CF55741DCF0DB700B64D4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28CF55751DCF0DB700B64D4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28CF55771DCF0DB700B64D4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 578KYYBXGE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Earey/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.habib.Earey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		28CF55781DCF0DB700B64D4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 578KYYBXGE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Earey/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.habib.Earey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28CF555F1DCF0DB700B64D4F /* Build configuration list for PBXProject "Earey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28CF55741DCF0DB700B64D4F /* Debug */,
+				28CF55751DCF0DB700B64D4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28CF55761DCF0DB700B64D4F /* Build configuration list for PBXNativeTarget "Earey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28CF55771DCF0DB700B64D4F /* Debug */,
+				28CF55781DCF0DB700B64D4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28CF555C1DCF0DB700B64D4F /* Project object */;
+}
